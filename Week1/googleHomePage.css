@@ -9,18 +9,26 @@ a {
 
 .header {
   height: 50px;
+  color: rgba(0, 0, 0, 0.87);
 }
 
-.header a {
-  display: block;
-  margin: 0 10px;
+.header ul {
   float: right;
-  height: 50px;
+}
+
+.header li {
+  float: left;
+  margin: 0 10px;
+  list-style: none;
+  /* display: block; */
   line-height: 50px;
 }
 
 .headerLink {
   font: 13px arial, sans-serif;
+}
+
+.header a:visited {
   color: rgba(0, 0, 0, 0.87);
 }
 
@@ -30,7 +38,6 @@ a {
 
 .headerLinkIcon {
   vertical-align: middle;
-  color: rgba(0, 0, 0, 0.87);
 }
 
 .logo {
@@ -53,36 +60,36 @@ a {
 }
 
 .searchBar .searchIcon {
+  display: block;
+  float: left;
   color: #9AA0A6;
   height: 20px;
   width: 20px;
   margin-top: 12px;
   margin-left: 13px;
-  display: block;
-  float: left;
   fill: currentColor;
 }
 
 .searchBar input {
+  float: left;
+  width: 487px;
+  height: 44px;
+  line-height: 44px;
+  padding-left: 10px;
   background-color: transparent;
   border: none;
   outline: none;
-  height: 44px;
-  line-height: 44px;
-  width: 487px;
   font-size: 16px;
-  float: left;
-  margin-left: 10px;
 }
 
 .searchBar .voiceIcon {
+  float: right;
   background: url(http://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png) 0 0 no-repeat;
   height: 24px;
   width: 24px;
   background-size: 24px;
-  float: right;
   margin-top: 10px;
-  margin-right: 13px;
+  margin-right: 15px;
 }
 
 .searchButton {
@@ -93,11 +100,11 @@ a {
 }
 
 input[type="submit"] {
-  border-radius: 4px;
-  font: 14px arial, sans-serif;
   height: 36px;
-  text-align: center;
   padding: 0 24px;
+  text-align: center;
+  font: 14px arial, sans-serif;
+  border-radius: 4px;
 }
 
 input[type="submit"]:hover {
@@ -111,15 +118,15 @@ input[name="btSearch"] {
 }
 
 input[name="btLucky"] {
-  background: white;
   color: #1a73e8;
+  background: white;
   border: none;
 }
 
 .language {
-  font: 13px arial, sans-serif;
   height: 28px;
   margin-top: 30px;
+  font: 13px arial, sans-serif;
   text-align: center;
 }
 
@@ -128,9 +135,9 @@ input[name="btLucky"] {
 }
 
 .qrCode {
+  background: url(http://ss.bdimg.com/static/mancard/img/qrcode_download-151b346d82.png) no-repeat 0 0/72px 72px;
   width: 72px;
   height: 72px;
-  background: url(http://ss.bdimg.com/static/mancard/img/qrcode_download-151b346d82.png) no-repeat 0 0/72px 72px;
   margin: auto;
 }
 
@@ -139,33 +146,38 @@ footer {
   left: 0px;
   bottom: 0px;
   width: 100%;
+  color: rgba(0, 0, 0, .54);
+  font-family: Arial, Helvetica, sans-serif;
   /* height: 80px; */
 }
 
 .location {
-  color: rgba(0, 0, 0, .54);
-  padding-left: 27px;
   height: 40px;
   line-height: 40px;
-  font-size: 15px;
+  padding-left: 27px;
   background: #f2f2f2;
   border-top: 1px solid #e4e4e4;
+  font-size: 15px;
 }
 
 .footerLink {
   /* color: rgba(0, 0, 0, .54); */
-  padding-left: 27px;
   height: 40px;
   line-height: 40px;
-  font-size: 13px;
+  padding-left: 27px;
   background: #f2f2f2;
   border-top: 1px solid #e4e4e4;
+  font-size: 13px;
 }
 
 .footerLink a {
   display: inline-block;
-  color: rgba(0, 0, 0, .54);
+  /* color: rgba(0, 0, 0, .54); */
   margin-right: 27px;
+}
+
+.footerLink a:visited {
+  color: rgba(0, 0, 0, .54);
 }
 
 .footerLink a:hover {
