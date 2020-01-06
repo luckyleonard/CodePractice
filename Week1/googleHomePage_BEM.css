@@ -24,20 +24,25 @@ a {
   line-height: 50px;
 }
 
-.headerLink {
-  font: 13px arial, sans-serif;
-}
-
 .header a:visited {
   color: rgba(0, 0, 0, 0.87);
 }
 
-.headerLink:hover {
+.header__link {
+  font: 13px arial, sans-serif;
+}
+
+.header__link:hover {
   text-decoration: underline;
 }
 
-.headerLinkIcon {
+.header__icon {
   vertical-align: middle;
+}
+
+.header__icon:hover {
+  background-color: rgba(32, 33, 36, 0.28);
+  border-radius: 50%;
 }
 
 .logo {
@@ -50,7 +55,7 @@ a {
   margin: 0 auto;
 }
 
-.searchBar {
+.search {
   width: 580px;
   height: 44px;
   margin: 0 auto;
@@ -59,7 +64,7 @@ a {
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
 }
 
-.searchBar .searchIcon {
+.search__icon {
   display: block;
   float: left;
   color: #9AA0A6;
@@ -70,7 +75,7 @@ a {
   fill: currentColor;
 }
 
-.searchBar input {
+.search input {
   float: left;
   width: 487px;
   height: 44px;
@@ -82,7 +87,7 @@ a {
   font-size: 16px;
 }
 
-.searchBar .voiceIcon {
+.search__voice {
   float: right;
   background: url(http://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png) 0 0 no-repeat;
   height: 24px;
@@ -92,7 +97,7 @@ a {
   margin-right: 15px;
 }
 
-.searchButton {
+.search-button {
   height: 40px;
   width: 252px;
   padding-top: 30px;
@@ -134,7 +139,7 @@ input[name="btLucky"] {
   text-decoration: underline;
 }
 
-.qrCode {
+.qr-code {
   background: url(http://ss.bdimg.com/static/mancard/img/qrcode_download-151b346d82.png) no-repeat 0 0/72px 72px;
   width: 72px;
   height: 72px;
@@ -143,8 +148,8 @@ input[name="btLucky"] {
 
 footer {
   position: fixed;
-  left: 0px;
-  bottom: 0px;
+  left: 0;
+  bottom: 0;
   width: 100%;
   color: rgba(0, 0, 0, .54);
   font-family: Arial, Helvetica, sans-serif;
@@ -160,7 +165,7 @@ footer {
   font-size: 15px;
 }
 
-.footerLink {
+.footer__link {
   /* color: rgba(0, 0, 0, .54); */
   height: 40px;
   line-height: 40px;
@@ -170,24 +175,24 @@ footer {
   font-size: 13px;
 }
 
-.footerLink a {
+.footer__link a {
   display: inline-block;
   /* color: rgba(0, 0, 0, .54); */
   margin-right: 27px;
 }
 
-.footerLink a:visited {
+.footer__link a:visited {
   color: rgba(0, 0, 0, .54);
 }
 
-.footerLink a:hover {
+.footer__link a:hover {
   text-decoration: underline;
 }
 
-.footerLeft {
+.footer__link--left {
   float: left;
 }
 
-.footerRight {
+.footer__link--right {
   float: right;
 }

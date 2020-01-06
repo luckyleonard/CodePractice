@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Google</title>
   <link href="https://www.google.com/images/branding/googleg/1x/googleg_standard_color_128dp.png" rel="icon" type="image/png">
-  <link href="./googleHomePage.css" rel="stylesheet">
+  <link href="./googleHomePage_BEM.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
@@ -15,19 +15,19 @@
   <div class="header">
     <ul>
       <li>
-        <a href="#" target="_blank" class="headerLink" title="Gmail邮箱">Gmail</a>
+        <a href="#" target="_blank" class="header__link" title="Gmail邮箱">Gmail</a>
       </li>
       <li>
-        <a href="#" target="_blank" class="headerLink" title="图片搜索">图片</a>
+        <a href="#" target="_blank" class="header__link" title="图片搜索">图片</a>
       </li>
       <li>
         <a href="#" target="_blank" title="Google应用">
-          <i class="material-icons headerLinkIcon" style="font-size: 24px;margin: 0 auto;">apps</i>
+          <i class="material-icons header__icon" style="font-size: 24px;margin: 0 auto;">apps</i>
         </a>
       </li>
       <li>
         <a href="#" target="_blank" title="Google账号" style="margin-right: 20px;">
-          <i class="material-icons headerLinkIcon" style="font-size: 36px;margin: 0 auto;">account_circle</i>
+          <i class="material-icons header__icon" style="font-size: 36px;margin: 0 auto;">account_circle</i>
         </a>
       </li>
     </ul>
@@ -35,31 +35,31 @@
   <div class="logo">
     <img src="./pic/googlelogo_color_272x92dp.png" alt="unable to load goolge logo" width="272px">
   </div>
-  <div class="searchBar">
-    <svg class="searchIcon" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <div class="search">
+    <svg class="search__icon" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
       <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
     </svg>
     <input type="text" title="Google 搜索">
-    <span class="voiceIcon" aria-label="按语音搜索"></span>
+    <span class="search__voice" aria-label="按语音搜索"></span>
   </div>
-  <div class="searchButton">
+  <div class="search-button">
     <input type="submit" value="Google 搜索" name="btSearch">
     <input type="submit" value="手气不错" name="btLucky">
   </div>
   <div class="language">
     Google 提供：<a href="#" target="_blank">English</a>
   </div>
-  <div class="qrCode"></div>
+  <div class="qr-code"></div>
   <footer>
     <div class="location">澳大利亚</div>
-    <div class="footerLink">
-      <div class="footerLeft">
+    <div class="footer__link">
+      <div class="footer__link--left">
         <a href="#" target="_blank">广告</a>
         <a href="#" target="_blank">商务</a>
         <a href="#" target="_blank">Google 大全</a>
         <a href="#" target="_blank">Google 搜索的运作方式</a>
       </div>
-      <div class="footerRight">
+      <div class="footer__link--right">
         <a href="#" target="_blank">隐私权</a>
         <a href="#" target="_blank">条款</a>
         <a href="#" target="_blank">设置</a>

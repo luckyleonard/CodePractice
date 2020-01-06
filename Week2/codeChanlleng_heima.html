@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<script>
+  testStr = 'abcidekkselasdaasd';
+  var tempChar;
+  var o = {};
+
+  function max(str) {
+    for (var i = 0; i <= str.length; i++) {
+      tempChar = str.charAt(i);
+      if (o[tempChar]) {
+        o[tempChar]++;
+      } else {
+        o[tempChar] = 1;
+      }
+    }
+    var maxNumber = 0;
+    for (var k in o) {
+      if (o[k] > maxNumber) {
+        maxNumber = o[k];
+      }
+    }
+    return maxNumber;
+  }
+
+  console.log(max(testStr));
+</script>
+
+<body>
+
+</body>
+
+</html>
