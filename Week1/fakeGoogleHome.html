@@ -3,55 +3,62 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Google</title>
   <link href="https://www.google.com/images/branding/googleg/1x/googleg_standard_color_128dp.png" rel="icon" type="image/png">
-  <link href="./googleHomePage_BEM.css" rel="stylesheet">
+  <link href="./css/google-refactor--flexbox.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="./js/homepage.js"></script>
+
 </head>
 
 <body>
-  <div class="header">
+  <header>
     <ul>
       <li>
-        <a href="#" target="_blank" class="header__link" title="Gmail邮箱">Gmail</a>
+        <a href="javascript:;" class="header__link" title="Gmail邮箱">Gmail</a>
       </li>
       <li>
-        <a href="#" target="_blank" class="header__link" title="图片搜索">图片</a>
+        <a href="javascript:;" class="header__link" title="图片搜索">图片</a>
       </li>
       <li>
-        <a href="#" target="_blank" title="Google应用">
-          <i class="material-icons header__icon" style="font-size: 24px;margin: 0 auto;">apps</i>
+        <a href="javascript:;" title="Google应用">
+          <i class="material-icons header__icon" style="font-size: 24px;margin: auto;">apps</i>
         </a>
       </li>
       <li>
-        <a href="#" target="_blank" title="Google账号" style="margin-right: 20px;">
-          <i class="material-icons header__icon" style="font-size: 36px;margin: 0 auto;">account_circle</i>
+        <a href="javascript:;" title="Google账号">
+          <i class="material-icons header__icon" style="font-size: 36px;margin: auto;">account_circle</i>
         </a>
       </li>
     </ul>
+  </header>
+  <div class="ui-content">
+    <div class="ui-logo">
+      <img src="./pic/googlelogo_color_272x92dp.png" alt="unable to load goolge logo" width="272px">
+    </div>
+    <div class="ui-search-input">
+      <svg class="ui-search-input__icon" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+      </svg>
+      <input type="text" title="Google 搜索">
+      <span class="ui-search-input__voice-icon" aria-label="按语音搜索"></span>
+      <ul class="ui-search-input__history">
+      </ul>
+    </div>
+
+    <div class="ui-search-button">
+      <button>Google 搜索</button>
+      <button>手气不错</button>
+    </div>
+    <div class="ui-language">
+      Google 提供：<a href="#" target="_blank">English</a>
+    </div>
+    <div class="ui-qr-code"></div>
   </div>
-  <div class="logo">
-    <img src="./pic/googlelogo_color_272x92dp.png" alt="unable to load goolge logo" width="272px">
-  </div>
-  <div class="search">
-    <svg class="search__icon" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-      <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
-    </svg>
-    <input type="text" title="Google 搜索">
-    <span class="search__voice" aria-label="按语音搜索"></span>
-  </div>
-  <div class="search-button">
-    <input type="submit" value="Google 搜索" name="btSearch">
-    <input type="submit" value="手气不错" name="btLucky">
-  </div>
-  <div class="language">
-    Google 提供：<a href="#" target="_blank">English</a>
-  </div>
-  <div class="qr-code"></div>
   <footer>
-    <div class="location">澳大利亚</div>
+    <div class="footer__location">澳大利亚</div>
     <div class="footer__link">
       <div class="footer__link--left">
         <a href="#" target="_blank">广告</a>

@@ -1,0 +1,234 @@
+/* initial */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 13px arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+
+/* header */
+
+header ul {
+  height: 50px;
+  /* color: rgba(0, 0, 0, 0.87); */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header li {
+  width: 3%;
+  margin-left: 1%;
+  min-width: 30px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+header li:last-child {
+  margin-right: 1%;
+}
+
+
+/* header a:visited {
+  color: rgba(0, 0, 0, 0.87);
+} */
+
+.header__link {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.header__link:hover {
+  text-decoration: underline;
+}
+
+.header__icon {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.header__icon:hover {
+  background-color: rgba(32, 33, 36, 0.28);
+  border-radius: 50%;
+}
+
+.ui-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ui-logo {
+  padding-top: 110px;
+  padding-bottom: 20px;
+}
+
+.ui-search-input {
+  width: 45%;
+  border: 1px solid rgba(223, 225, 229, 0);
+  border-radius: 24px;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.ui-search-input__icon {
+  color: #9AA0A6;
+  height: 20px;
+  width: 20px;
+  margin-left: 3%;
+  fill: currentColor;
+}
+
+.ui-search-input input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  height: 44px;
+  line-height: 44px;
+  padding-left: 2%;
+  flex: 1;
+}
+
+.ui-search-input__voice-icon {
+  height: 24px;
+  width: 24px;
+  padding-right: 3%;
+  background: url(http://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png) 0 0 no-repeat;
+  background-size: 24px;
+}
+
+.ui-search-input__history {
+  width: 84%;
+  padding: 0 8% 10px 8%;
+  font-size: 16px;
+  display: none;
+}
+
+.ui-search-input__history li {
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+}
+
+.ui-search-input__history li:first-child {
+  border-top: 1px solid rgba(32, 33, 36, 0.28);
+}
+
+.ui-search-input__history a {
+  position: absolute;
+  right: 0;
+}
+
+.ui-search-button {
+  height: 100px;
+  width: 20%;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ui-search-button button {
+  height: 36px;
+  padding: 0 24px;
+  margin-right: 15px;
+  text-align: center;
+  color: #5F6368;
+  background: #f2f2f2;
+  border-radius: 4px;
+}
+
+.ui-search-button button:hover {
+  background-color: #E8F0FE;
+  border: 1px solid #dadce0;
+}
+
+.ui-language {
+  margin-bottom: 20px;
+}
+
+.ui-language a:hover {
+  text-decoration: underline;
+}
+
+.ui-qr-code {
+  background: url(http://ss.bdimg.com/static/mancard/img/qrcode_download-151b346d82.png) no-repeat 0 0/72px 72px;
+  width: 72px;
+  height: 72px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: rgba(0, 0, 0, .54);
+  /* font-family: Arial, Helvetica, sans-serif; */
+  /* height: 80px; */
+}
+
+.footer__location {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 2%;
+  background: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  font-size: 15px;
+}
+
+.footer__link {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 2%;
+  background: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  font-size: 13px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__link a {
+  color: rgba(0, 0, 0, .54);
+  display: inline-block;
+  margin-right: 27px;
+}
+
+.footer__link a:visited {
+  color: rgba(0, 0, 0, .54);
+}
+
+.footer__link a:hover {
+  text-decoration: underline;
+}
+
+.footer__link--left {
+  flex: 82%;
+}
+
+.footer__link--right {
+  flex: 10%;
+}
