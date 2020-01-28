@@ -1,0 +1,21 @@
+{
+  "1": {
+    "name": "king arthur",
+    "password": "password1",
+    "profession": "king",
+    "id": 1
+  },
+  "2": {
+    "name": "rob kendal",
+    "password": "password2",
+    "profession": "code fiddler",
+    "id": 2
+  },
+  "3": {
+    "name": "teresa may",
+    "password": "password3",
+    "profession": "brexit killer",
+    "id": 3
+  },
+  "4": {}
+}
