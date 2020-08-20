@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "e8EjEu2XXeD+HfW4bKqFdO8C4VMybOtWL+MIuSQsjFvVvUuinnqtP+Z7w6z8uqYzJOJAfT47HY8HtRZIAWxJUg==",
+  "success": true,
+  "projectFilePath": "E:\\CodeDocument\\AngularShop\\ShopAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lenovo\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+  ],
+  "logs": []
+}
